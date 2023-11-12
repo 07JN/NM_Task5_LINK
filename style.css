@@ -70,8 +70,8 @@ form.sign-in-form {
   max-width: 380px;
   width: 100%;
   background-color: #f0f0f0;
-  margin:1px;
-  height: 55px;
+  margin: 1%;
+  height: 30px;
   border-radius: 55px;
   display: grid;
   grid-template-columns: 15% 85%;
@@ -92,9 +92,9 @@ form.sign-in-form {
   background: none;
   outline: none;
   border: none;
-/*   line-height:1 ; */
+  /* line-height: 1; */
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #333;
 }
 
@@ -113,7 +113,7 @@ form.sign-in-form {
   justify-content: center;
 }
 
-/* .social-icon {
+.social-icon {
   height: 46px;
   width: 46px;
   display: flex;
@@ -126,46 +126,10 @@ form.sign-in-form {
   text-decoration: none;
   font-size: 1.3rem;
   transition: 0.3s;
-} */
-
-.social-icon {
-  height: 46px;
-  width: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0.45rem;
-  color: #3b5998; /* Facebook color */
-  border-radius: 50%;
-  border: 3px solid #3b5998; /* Facebook color */
-  text-decoration: none;
-  font-size: 1.3rem;
-  transition: 0.3s;
-}
-
-.social-icon:nth-child(2) {
-  color: #1da1f2; /* Twitter color */
-  border-color: #1da1f2; /* Twitter color */
-}
-
-.social-icon:nth-child(3) {
-  color: #dd4b39; /* Google color */
-  border-color: #dd4b39; /* Google color */
-}
-
-.social-icon:nth-child(4) {
-  color: #0077b5; /* LinkedIn color */
-  border-color: #0077b5; /* LinkedIn color */
 }
 
 .social-icon:hover {
-  color: #fff;
-  border-color: #fff;
-}
-
-
-.social-icon:hover {
-  color: #f7f73f;
+  color: #f7543f;
   border-color: #b83120;
 }
 
@@ -186,7 +150,7 @@ form.sign-in-form {
 }
 
 .btn:hover {
-  background-color: #f1ac35;
+  background-color: #f14b35;
 }
 .panels-container {
   position: absolute;
@@ -206,20 +170,10 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background: linear-gradient(45deg, #ffbc49, #ff8c00, #ff6347); /* Adjust gradient colors as needed */
+  background:#FF4955;
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
-  animation: changeColor 10s infinite alternate; /* Adjust animation duration as needed */
-}
-
-@keyframes changeColor {
-  0% {
-    background: linear-gradient(45deg, #ffbc49, #ff8c00, #ff6347);
-  }
-  100% {
-    background: linear-gradient(45deg, #ff6347, #ff8c00, #ffbc49);
-  }
 }
 
 .image {
@@ -268,16 +222,13 @@ form.sign-in-form {
 
 .btn.transparent {
   margin: 0;
-  background-color:#f15435;
+  background: none;
   border: 3px solid #fff;
   width: 130px;
   height: 41px;
   font-weight: 600;
   box-shadow: none;
   font-size: 0.8rem;
-}
-.btn.transparent:hover{
-  background-color: #f1ac35;
 }
 
 .right-panel .image,
@@ -451,38 +402,4 @@ form.sign-in-form {
     bottom: 28%;
     left: 50%;
   }
-}
-/* Default styles for larger screens */
-.container {
-  display: flex;
-  height: 100vh;
-}
-
-/* Styles for screens up to 600px wide */
-@media screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-
-  /* Adjust other styles for smaller screens */
-  .logo {
-    height: 50%; /* Adjust the logo size for smaller screens */
-  }
-
-  /* Add more styles as needed */
-}
-body {
-  margin: 0;
-  padding: 0;
-  background: url('/menubgimg.jpg') center/cover no-repeat;
-  font-family: 'Poppins', sans-serif;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  background-color: rgba(154, 121, 29, 0.8); /* You can adjust the background color and opacity */
-  min-height: 100vh;
-  overflow: hidden;
-  background-blend-mode: screen; /* Adjust blending mode based on your preference */
 }
