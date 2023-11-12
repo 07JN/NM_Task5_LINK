@@ -71,11 +71,11 @@ form.sign-in-form {
   width: 100%;
   background-color: #f0f0f0;
   margin: 1%;
-  height: 50px;
+  height: 30px;
   border-radius: 55px;
   display: grid;
   grid-template-columns: 15% 85%;
-  padding: 0 0.4rem;
+  padding: 0 0.3rem;
   position: relative;
   box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.6);
 }
