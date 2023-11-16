@@ -223,7 +223,11 @@
                 font-size: 16px;
             }
         }
-        
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #FFD54F;
+    color: #333;
+}
     </style>
 </head>
 
@@ -524,12 +528,12 @@
 
                 <div class="form-group">
                     <label for="colorThemes">Color Themes:</label>
-                    <select class="form-control" id="colorThemes">
-                        <option value="default">Default Theme</option>
-                        <option value="light">Light Theme</option>
-                        <option value="dark">Dark Theme</option>
-                        <option value="custom">Custom Theme</option>
-                    </select>
+                 <select class="form-control" id="colorThemes" onclick="changeTheme()">
+    <option value="default">Default Theme</option>
+    <option value="light">Light Theme</option>
+    <option value="dark">Dark Theme</option>
+    <option value="custom">Custom Theme</option>
+</select>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Save Accessibility Settings</button>
@@ -566,6 +570,25 @@
             </div>
         </div>
     </footer>
+    <script>
+        function changeTheme() {
+    var theme = document.getElementById("colorThemes").value;
+
+    if (theme === "light") {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    } else if (theme === "dark") {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    } else if (theme === "custom") {
+        // Add custom theme styles here
+    } else {
+        // Default theme
+        document.body.style.backgroundColor = "transparent";
+        document.body.style.color = "black";
+    }
+}
+    </script>
 </body>
 
 </html>
